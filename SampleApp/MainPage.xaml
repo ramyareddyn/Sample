@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SampleApp" xmlns:xe="clr-namespace:XamEffects;assembly=XamEffects" x:Class="SampleApp.MainPage">
+   <StackLayout xe:Commands.Tap="{Binding OnTapped}" xe:TouchEffect.Color="Red" HorizontalOptions="Center" VerticalOptions="Center" xe:EffectsConfig.ChildrenInputTransparent="True">
+    <Grid HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100" WidthRequest="200" BackgroundColor="LightGray">
+        <Label Text="Test touch effect" HorizontalOptions="Center" VerticalOptions="Center"/>
+    </Grid>
+  </StackLayout>
+</ContentPage>
